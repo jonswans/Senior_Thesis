@@ -14,7 +14,7 @@ IDs$ID <- with_options(
 for(y in 1:length(IDs$ID)){
   siteNumber <- IDs$ID[y] 
   parameterCd <- c("99133","00060") #select parameter 
-  startDate <- "2005-10-01"
+  startDate <- "2012-10-01"
   endDate <- "2018-09-30"
   
   no_dis <- readNWISdv(siteNumber, parameterCd, startDate, endDate)
